@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Species - Tails of Hope</title>
+  <link rel="stylesheet" href="bird.css">
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&family=Fredoka+One&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="home.html" class="logo">
+        <i class="fas fa-dove"></i> Tails of Hope
+      </a>
+      <ul class="nav-links">
+        <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+        <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <header>
+      <h1>Discover Beautiful Bird Species</h1>
+      <p class="subtitle">Click on a bird to learn more about these feathered friends!</p>
+      <div class="bird-decoration">
+        <i class="fas fa-feather-alt"></i>
+        <i class="fas fa-feather"></i>
+        <i class="fas fa-feather-alt"></i>
+      </div>
+    </header>
+
+    <!-- Bird Categories Section -->
+    <div class="categories">
+      <div class="category" onclick="window.location.href='parrot.html'">
+        <div class="category-icon">
+        
+        </div>
+        <img src="parrot.png" alt="Colorful Parrot">
+        <h3>Parrots</h3>
+        <p>Colorful and talkative birds</p>
+      </div>
+      
+      <div class="category" onclick="window.location.href='chick.html'">
+        <div class="category-icon">
+         
+        </div>
+        <img src="chick.png" alt="Cute Chicks">
+        <h3>Chicks</h3>
+        <p>Adorable baby birds</p>
+      </div>
+      
+      <div class="category" onclick="window.location.href='eagle.html'">
+        <div class="category-icon">
+  
+        </div>
+        <img src="eagle.png" alt="Majestic Eagle">
+        <h3>Eagles</h3>
+        <p>Powerful birds of prey</p>
+      </div>
+      
+      <div class="category" onclick="window.location.href='peacock.html'">
+        <div class="category-icon">
+    
+        </div>
+        <img src="peacock.png" alt="Beautiful Peacock">
+        <h3>Peacocks</h3>
+        <p>Gorgeous plumage</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with <i class="fas fa-heart"></i> by Tails of Hope</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

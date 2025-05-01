@@ -1,0 +1,182 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Breeds - Tails of Hope</title>
+  <link rel="stylesheet" href="cat.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">Tails of Hope</div>
+    <ul class="nav-links">
+      <li><a href="home.html" class="active">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Discover Cat Breeds</h1>
+      <p>Explore the unique charm of each breed to find your perfect companion.</p>
+    </header>
+
+    <div class="categories">
+      <div class="category" onclick="window.location.href='persian.html'">
+        <img src="persian.png" alt="Persian">
+        <h3>Persian</h3>
+      </div>
+      <div class="category" onclick="window.location.href='maine.html'">
+        <img src="maine.png" alt="Maine Coon">
+        <h3>Maine Coon</h3>
+      </div>
+      <div class="category" onclick="window.location.href='british.html'">
+        <img src="british.png" alt="British Shorthair">
+        <h3>British Shorthair</h3>
+      </div>
+      <div class="category" onclick="window.location.href='ragdoll.html'">
+        <img src="ragdoll.png" alt="Ragdoll">
+        <h3>Ragdoll</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Discover cat breeds with Tails of Hope. Explore Persians, Siamese, Maine Coons, and more.">
+  <title>Cats - Tails of Hope</title>
+  <link rel="stylesheet" href="cat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+      <a href="home.html" class="logo">Tails of Hope</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Find Your Ideal Cat Breed</h1>
+      <p>Graceful, affectionate, and independent—explore the world of cats.</p>
+    </header>
+
+    <div class="categories">
+      <div class="category" tabindex="0" role="button" aria-label="Learn about Persian cats">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="persian.png" alt="Persian cat sitting regally" />
+            <h3>Persian</h3>
+          </div>
+          <div class="card-back">
+            <h3>Persian</h3>
+            <p>Elegant and calm with a luxurious coat.</p>
+            <a href="persian.html" class="card-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="category" tabindex="0" role="button" aria-label="Learn about Maine Coon cats">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="maine.png" alt="Maine Coon cat with long fur" />
+            <h3>Maine Coon</h3>
+          </div>
+          <div class="card-back">
+            <h3>Maine Coon</h3>
+            <p>Gentle giants known for intelligence and size.</p>
+            <a href="maine.html" class="card-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="category" tabindex="0" role="button" aria-label="Learn about Siamese cats">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="british.png" alt="Siamese cat looking curious" />
+            <h3>british</h3>
+          </div>
+          <div class="card-back">
+            <h3>british</h3>
+            <p>Vocal and affectionate, loves companionship.</p>
+            <a href="british.html" class="card-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="category" tabindex="0" role="button" aria-label="Learn about Sphynx cats">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="ragdoll.png" alt="Sphynx cat posing" />
+            <h3>ragdoll</h3>
+          </div>
+          <div class="card-back">
+            <h3>ragdoll</h3>
+            <p>Hairless and cuddly, full of personality.</p>
+            <a href="ragdoll.html" class="card-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>Tails of Hope</h4>
+        <p>Helping you meet your perfect feline friend since 2025.</p>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <form action="#" onsubmit="alert('Newsletter signup not implemented yet'); return false;">
+          <input type="email" placeholder="Enter your email" aria-label="Email for newsletter" required />
+          <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Tails of Hope. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      navLinks.classList.toggle('active');
+      menuToggle.innerHTML = isExpanded ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+    });
+
+    document.querySelectorAll('.category').forEach(card => {
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          card.querySelector('.card-link')?.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

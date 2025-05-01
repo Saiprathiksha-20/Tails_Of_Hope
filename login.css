@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('loginpage.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for all pages */
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(239, 237, 237, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Style */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:black;
+}
+
+/* Input Group Style */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-field i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #fff;
+}
+
+/* Button Styling */
+.btn-field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.disable {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Links Style */
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color:white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .input-field input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Special Background for "About" Page */
+.about-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Search Results */
+.search-results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-results li {
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.search-results p {
+    color: #ff6b6b;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}

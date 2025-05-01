@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tails of Hope</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/80f8d2d16e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign In</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p>forgot password <a href="#">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signinBtn">Sign In</button>
+                    <button type="button" id="signupBtn" class="disable">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let title = document.getElementById("title");
+
+        signupBtn.onclick = function() {
+            window.location.href = "signup.html";
+        }
+    </script>
+</body>
+</html>

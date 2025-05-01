@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Tails of Hope</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/80f8d2d16e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <h1>Search for Help</h1>
+            <form id="searchForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search for available help" oninput="updateSearchResults()">
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <!-- Display search results here -->
+            <div id="searchResults" class="search-results">
+                <!-- Results will be dynamically displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulated data (e.g., available help topics or services)
+        const availableHelp = [
+            "Food Assistance",
+            "Shelter Support",
+            "Mental Health Counseling",
+            "Financial Aid",
+            "Pet Care",
+            "Job Opportunities",
+            "Child Care Assistance"
+        ];
+
+        // Function to update the displayed search results
+        function updateSearchResults() {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const resultsDiv = document.getElementById("searchResults");
+
+            if (searchInput === "") {
+                resultsDiv.innerHTML = ""; // Clear results if input is empty
+                return;
+            }
+
+            // Filter the available help based on the search input
+            const filteredResults = availableHelp.filter(item => 
+                item.toLowerCase().includes(searchInput)
+            );
+
+            // Display the filtered results
+            if (filteredResults.length > 0) {
+                resultsDiv.innerHTML = "<ul>" + filteredResults.map(item => `<li>${item}</li>`).join('') + "</ul>";
+            } else {
+                resultsDiv.innerHTML = "<p>No results found for your search.</p>";
+            }
+        }
+
+        // Handle form submission (to prevent page reload)
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission from reloading the page
+            updateSearchResults();  // Update the results based on the input
+        });
+    </script>
+</body>
+</html>
